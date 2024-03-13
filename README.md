@@ -1,1 +1,1 @@
-# odin-etch-a-sketch
+This my Etch-a-Sketch project. Wish me luck.
