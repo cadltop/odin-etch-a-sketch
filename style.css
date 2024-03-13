@@ -1,0 +1,17 @@
+.grid, .row, .column {
+    display: flex;
+}
+
+.grid, .row {
+    gap: 5px;
+}
+
+.grid {
+    flex-flow: column;
+}
+
+.column {
+    height: 125px;
+    width: 125px;
+    background-color: yellowgreen;
+}
