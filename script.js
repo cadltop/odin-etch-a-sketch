@@ -16,5 +16,16 @@ function createGrid() {
         }
     }
 }
+function hoverEffect () {
+    for (let i1 = 1; i1 <= 16; i1++) {
+        for (let i2 = 1; i2 <= 16; i2++) {
+            const currentSquare = document.querySelector(`.r${i1} .c${i2}`);
+            currentSquare.addEventListener('mouseenter', () => {
+                currentSquare.style.cssText = 'background-color: red;'
+            });
+        }
+    }
+}
 
 createGrid();
+hoverEffect();
