@@ -1,3 +1,6 @@
+body, .grid {
+    background-color: rgb(0, 17, 255);
+}
 .grid, .row, .column {
     display: flex;
 }
