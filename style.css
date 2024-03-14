@@ -5,8 +5,6 @@ body, .grid, .row, .column {
 
 body {
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
 }
 
 body, .grid {
@@ -22,6 +20,7 @@ body, .grid {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 25px;
+    align-self: center;
 }
 h1 {
     color: white;
@@ -43,6 +42,7 @@ button {
 
 .grid {
     flex-flow: column;
+    align-self: flex-start;
 }
 
 .column {
