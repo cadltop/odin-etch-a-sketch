@@ -20,8 +20,10 @@ function hoverEffect(squareVal) {
     for (let i1 = 1; i1 <= squareVal; i1++) {
         for (let i2 = 1; i2 <= squareVal; i2++) {
             const currentSquare = document.querySelector(`.r${i1} .c${i2}`);
+            let dark = 0;
             currentSquare.addEventListener('mouseenter', () => {
-                currentSquare.style.cssText = 'background-color: red;'
+                currentSquare.style.cssText = `background-color: hsl(${Math.round(Math.random() * 360)}
+                    , 100%, 50%)`;
             });
         }
     }
