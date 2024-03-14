@@ -35,10 +35,20 @@ startButton.addEventListener('click', () => {
     if (squareNum > 100) {
         alert('That number was too large. Try again!');
     } else {
+        for (let i1 = 16; i1 >= 1; i1--) {
+            for (let i2 = 16; i2 >= 1; i2--) {
+                const columnSelect = document.querySelector(`.r${i1} .c${i2}`);
+                columnSelect.remove();
+            }
+
+            const rowSelect = document.querySelector(`.r${i1}`);
+            rowSelect.remove();
+        }
         createGrid(squareNum);
         hoverEffect(squareNum);        
     }
 });
 
-createGrid();
-hoverEffect();
+let squareNum = 16;
+createGrid(squareNum);
+hoverEffect(squareNum);
