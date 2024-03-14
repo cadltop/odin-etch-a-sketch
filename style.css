@@ -15,7 +15,7 @@ body, .grid {
 }
 
 .column {
-    height: 125px;
-    width: 125px;
+    min-height: 125px;
+    min-width: 125px;
     background-color: yellowgreen;
 }
